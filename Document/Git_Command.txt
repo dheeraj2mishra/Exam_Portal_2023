@@ -1,1 +1,10 @@
-1. git status
+1. ## Below comand use to check the status 
+git status
+2. ## Below comand is use to add files 
+git add abc.txt
+
+3. ## Below command is use to commit the changes
+git commit -m "Commit description"
+
+4. ## Below changes are use to push the changes on remote repository
+git push
