@@ -15,6 +15,6 @@ public interface UserService {
 	
 	//Delete User by USer Name
 	
-	public void deleteUserByUserName(final String userName);
+	public void deleteUserByUserId(final Long userId);
 
 }

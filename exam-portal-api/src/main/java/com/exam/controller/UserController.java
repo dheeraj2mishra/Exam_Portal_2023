@@ -45,9 +45,9 @@ public class UserController {
 		
 	}
 
-	@DeleteMapping("/{userName}")
-	public void deleteUserByUserName(@RequestParam("userName") String userName) {
-		this.userService.deleteUserByUserName(userName);
+	@DeleteMapping("/{userId}")
+	public void deleteUserByUserName(@PathVariable("userId") Long userId) {
+		this.userService.deleteUserByUserId(userId);
 		
 	}
 }
