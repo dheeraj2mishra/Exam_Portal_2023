@@ -9,5 +9,6 @@ import com.exam.entities.User;
 public interface UserRepository extends JpaRepository<User, Long>{
 	
 	public User findByUserName(String userName);
+	public void deleteByUserName(String userName);
 
 }

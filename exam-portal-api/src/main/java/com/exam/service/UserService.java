@@ -8,6 +8,13 @@ import com.exam.entities.UserRole;
 public interface UserService {
 	
 	//create user
-	public User createUser(User user, Set<UserRole> userRoles) throws Exception;
+	public User createUser(final User user, final Set<UserRole> userRoles) throws Exception;
+	
+	//Get User By user name
+	public User getUserByUserName(final String userName);
+	
+	//Delete User by USer Name
+	
+	public void deleteUserByUserName(final String userName);
 
 }

@@ -27,7 +27,7 @@ public class ExamPortalApiApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
           System.out.println("******** Code Started ************");	
-          User user = new User();
+        /*  User user = new User();
           user.setUserName("dheeraj123");
           user.setEmail("dheeraj@gmail.com");
           user.setFirstName("Dheeraj");
@@ -42,6 +42,6 @@ public class ExamPortalApiApplication implements CommandLineRunner {
           Set<UserRole> userRoles = new HashSet<>();
           userRoles.add(userRole);
           User newUser = this.userService.createUser(user, userRoles);
-          System.out.println("newUser  : " +newUser);
+          System.out.println("newUser  : " +newUser); */
 	}
 }

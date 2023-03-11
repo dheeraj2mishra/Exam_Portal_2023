@@ -38,4 +38,17 @@ public class UserServiceImpl implements UserService {
 		return userAlredyExist;
 	}
 
+
+	@Override
+	public User getUserByUserName(String userName) {
+		 User user= this.userRepository.findByUserName(userName);
+		return user;
+	}
+
+
+	@Override
+	public void deleteUserByUserName(String userName) {
+		this.userRepository.deleteByUserName(userName);
+	}
+
 }
