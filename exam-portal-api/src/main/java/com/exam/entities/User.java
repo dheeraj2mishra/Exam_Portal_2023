@@ -28,6 +28,7 @@ public class User {
 	private String email;
 	private boolean isEnable = true;
 	private String profile;
+	private long mobileNumber;
 	//user has many roles
 	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="user")
 	@JsonIgnore
@@ -107,6 +108,17 @@ public class User {
 
 	public void setUserRoles(Set<UserRole> userRoles) {
 		this.userRoles = userRoles;
+	}
+	
+	
+	
+
+	public long getMobileNumber() {
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(long mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
 
 	@Override
