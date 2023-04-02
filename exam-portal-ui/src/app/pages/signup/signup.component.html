@@ -1,56 +1,60 @@
 <div class="bootstrap-wrapper">
     <div class="container">
-        <div class="row" style="margin-top : 20px;">
-            <div class="col-md-6 offset-md-3 text-center">
-                <div class="container text-center">
-                    <img src="../../../assets/logo.png" alt="" width="100" height="100" />
-                </div>
-                {{user | json}}
-                <h1 class="text-center"> Register Here </h1>
-                <form (ngSubmit)="formSubmit()">
-                    <mat-form-field class="full-width text-center" appearance="outline">
-                        <mat-label>User Name </mat-label>
-                        <input required [(ngModel)]="user.userName" name="userName" matInput placeholder="Please Enter User Name">
-                        <mat-hint>User Name Should Be Unique</mat-hint>
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width text-center" appearance="outline">
-                        <mat-label>Password </mat-label>
-                        <input required type="password" [(ngModel)]="user.password" name="password" matInput placeholder="Please Enter Password ">
-                        <mat-hint>Password Should be Alphanumeric</mat-hint>
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width text-center" appearance="outline">
-                        <mat-label>First Name </mat-label>
-                        <input [(ngModel)]="user.firstName" name="firstName" matInput placeholder="Please Enter User Name">
-                        <mat-hint></mat-hint>
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width text-center" appearance="outline">
-                        <mat-label>Last Name </mat-label>
-                        <input [(ngModel)]="user.lastName" name="lastName" matInput placeholder="Please Enter User Name">
-                        <mat-hint></mat-hint>
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width text-center" appearance="outline">
-                        <mat-label>Email </mat-label>
-                        <input [(ngModel)]="user.email" name="email" matInput placeholder="Please Enter User Name">
-                        <mat-hint>Email Should be Unique</mat-hint>
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width text-center" appearance="outline">
-                        <mat-label>Mobile </mat-label>
-                        <input type="number" [(ngModel)]="user.mobileNumber" name="mobileNumber" matInput placeholder="Please Enter Mobile Number">
-                        <mat-hint>Mobile Number Should be Digit Only</mat-hint>
-                    </mat-form-field>
+        <div class="row">
+            <mat-card>
+                <div class="col-md-6 offset-md-3 text-center">
                     <div class="container text-center">
-                        <button type="submit" mat-button color="primary">Register</button>
-                        <button mat-button color="accent">Clear</button>
-
+                        <img src="../../../assets/logo.png" alt="" width="100" height="100" />
                     </div>
+                    {{user | json}}
+                    <h1 class="text-center"> Register Here </h1>
 
-                </form>
-            </div>
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="full-width text-center" appearance="outline">
+                            <mat-label>User Name </mat-label>
+                            <input required [(ngModel)]="user.userName" name="userName" matInput placeholder="Please Enter User Name">
+                            <mat-hint>User Name Should Be Unique</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width text-center" appearance="outline">
+                            <mat-label>Password </mat-label>
+                            <input required type="password" [(ngModel)]="user.password" name="password" matInput placeholder="Please Enter Password ">
+                            <mat-hint>Password Should be Alphanumeric</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width text-center" appearance="outline">
+                            <mat-label>First Name </mat-label>
+                            <input [(ngModel)]="user.firstName" name="firstName" matInput placeholder="Please Enter User Name">
+                            <mat-hint></mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width text-center" appearance="outline">
+                            <mat-label>Last Name </mat-label>
+                            <input [(ngModel)]="user.lastName" name="lastName" matInput placeholder="Please Enter User Name">
+                            <mat-hint></mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width text-center" appearance="outline">
+                            <mat-label>Email </mat-label>
+                            <input [(ngModel)]="user.email" name="email" matInput placeholder="Please Enter User Name">
+                            <mat-hint>Email Should be Unique</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width text-center" appearance="outline">
+                            <mat-label>Mobile </mat-label>
+                            <input type="number" [(ngModel)]="user.mobileNumber" name="mobileNumber" matInput placeholder="Please Enter Mobile Number">
+                            <mat-hint>Mobile Number Should be Digit Only</mat-hint>
+                        </mat-form-field>
+                        <div class="container text-center">
+                            <button type="submit" mat-button color="primary">Register</button>
+                            <button mat-button color="accent">Clear</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </mat-card>
+
         </div>
     </div>
 </div>
